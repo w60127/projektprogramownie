@@ -3,7 +3,7 @@
     partial class Form1
     {
         /// <summary>
-        /// Wymagana zmienna projektanta.
+        /// Utworzenie formularza
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
@@ -23,20 +23,22 @@
         #region Kod generowany przez Projektanta formularzy systemu Windows
 
         /// <summary>
-        /// Metoda wymagana do obsługi projektanta — nie należy modyfikować
-        /// jej zawartości w edytorze kodu.
+        /// Metody utworzone do Windows form
         /// </summary>
         private void InitializeComponent()
-        {
+        {///<param name="barcodeControll1"> Za pomocą biblioteki barcode.dll "przycisk" control wyświetla barcode</param>
             this.barcodeControl1 = new Limilabs.Windows.BarcodeControl();
+         ///<param name="button1"> Utworzenie przycisku</param>
             this.button1 = new System.Windows.Forms.Button();
+         ///<param name="print"> Utworzenie zależności do drukowania</param>
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+         ///<param name="textbox1"> Utworzenie formularza do wprowadzania</param>
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.barcodeControl1)).BeginInit();
             this.SuspendLayout();
             // 
-            // barcodeControl1
+            /// <param name="barcodeControl1Main">Zdefiniowanie sposobu wyświetlania podglądu barcode w tym maksymalna wielkość wyświetlanej grafiki, czcionki czy odległości pomiędzy kolejnymi barami</param>
             // 
             this.barcodeControl1.BackColor = System.Drawing.Color.White;
             this.barcodeControl1.BarColor = System.Drawing.Color.Black;
@@ -52,8 +54,8 @@
             this.barcodeControl1.Size = new System.Drawing.Size(800, 400);
             this.barcodeControl1.TabIndex = 0;
             this.barcodeControl1.Text = "barcodeControl1";
-            // 
-            // button1
+            ///
+            /// <param name="button1Main">Zdefiniowanie opisu przycisku i jego zachowania</param>
             // 
             this.button1.Location = new System.Drawing.Point(2, 325);
             this.button1.Name = "button1";
@@ -88,8 +90,8 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.barcodeControl1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Barcode generator";
+            this.Text = "Barcode generator";
             ((System.ComponentModel.ISupportInitialize)(this.barcodeControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
