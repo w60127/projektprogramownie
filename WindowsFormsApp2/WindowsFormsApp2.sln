@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp2", "Windows
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testy maksymalnej długości wprowadzania", "UnitTestProject1\testy maksymalnej długości wprowadzania.csproj", "{F8353B27-9B96-46E9-9AA6-4DACE1C85BE2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sprawdzanie polskości", "UnitTestProject3\sprawdzanie polskości.csproj", "{FCE1CD7D-C6BF-48FD-AEB9-A9B0220A09A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F8353B27-9B96-46E9-9AA6-4DACE1C85BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8353B27-9B96-46E9-9AA6-4DACE1C85BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8353B27-9B96-46E9-9AA6-4DACE1C85BE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCE1CD7D-C6BF-48FD-AEB9-A9B0220A09A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCE1CD7D-C6BF-48FD-AEB9-A9B0220A09A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCE1CD7D-C6BF-48FD-AEB9-A9B0220A09A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCE1CD7D-C6BF-48FD-AEB9-A9B0220A09A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

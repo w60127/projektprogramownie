@@ -45,7 +45,9 @@ namespace WindowsFormsApp2
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             this.barcodeControl1.Number = textBox1.Text;
+            string tekst = textBox1.Text;
             licznik = this.barcodeControl1.Number.Length;
+            czyZawieraPolskieZnaki(tekst);
             testDlugosci(licznik);
 
         }
@@ -73,7 +75,61 @@ namespace WindowsFormsApp2
             return true;
         }
 
+        public bool czyZawieraPolskieZnaki(string box)
+        {
+            
+            string polskieZnaki1 = "ą";
+            string polskieZnaki2 = "ć";
+            string polskieZnaki3 = "ę";
+            string polskieZnaki4 = "ó";
+            string polskieZnaki5 = "ń";
+            string polskieZnaki6 = "ł";
+            string polskieZnaki7 = "ż";
+            string polskieZnaki8 = "ź";
+            if (box.Contains(polskieZnaki1))
+            {
+                MessageBox.Show("Nie używaj polskich znaków w kodzie kreskowym");
+                return true;
+            }
+            if (box.Contains(polskieZnaki2))
+            {
+                MessageBox.Show("Nie używaj polskich znaków w kodzie kreskowym");
+                return true;
+            }
+            if (box.Contains(polskieZnaki3))
+            {
+                MessageBox.Show("Nie używaj polskich znaków w kodzie kreskowym");
+                return true;
+            }
+            if (box.Contains(polskieZnaki4))
+            {
+                MessageBox.Show("Nie używaj polskich znaków w kodzie kreskowym");
+                return true;
+            }
+            if (box.Contains(polskieZnaki5))
+            {
+                MessageBox.Show("Nie używaj polskich znaków w kodzie kreskowym");
+                return true;
+            }
+            if (box.Contains(polskieZnaki6))
+            {
+                MessageBox.Show("Nie używaj polskich znaków w kodzie kreskowym");
+                return true;
+            }
+            if (box.Contains(polskieZnaki7))
+            {
+                MessageBox.Show("Nie używaj polskich znaków w kodzie kreskowym");
+                return true;
+            }
+            if (box.Contains(polskieZnaki8))
+            {
+                MessageBox.Show("Nie używaj polskich znaków w kodzie kreskowym");
+                return true;
+            }
+            
 
+            return false;
+        }
     }
    
 }

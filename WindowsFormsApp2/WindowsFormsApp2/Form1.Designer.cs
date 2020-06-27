@@ -38,14 +38,14 @@
             // 
             this.barcodeControl1.BackColor = System.Drawing.Color.White;
             this.barcodeControl1.BarColor = System.Drawing.Color.Black;
-            this.barcodeControl1.FontName = "Microsoft Sans Serif";
+            this.barcodeControl1.FontName = "Orator Std";
             this.barcodeControl1.ForeColor = System.Drawing.Color.Black;
             this.barcodeControl1.Location = new System.Drawing.Point(2, 1);
             this.barcodeControl1.MaximumSize = new System.Drawing.Size(800, 200);
             this.barcodeControl1.MinimumSize = new System.Drawing.Size(800, 200);
             this.barcodeControl1.Name = "barcodeControl1";
             this.barcodeControl1.NarrowBarWidth = 2;
-            this.barcodeControl1.Number = "Test gotowości programu";
+            this.barcodeControl1.Number = "Gotowy do pracy";
             this.barcodeControl1.Ratio = 1;
             this.barcodeControl1.Size = new System.Drawing.Size(800, 200);
             this.barcodeControl1.TabIndex = 0;
