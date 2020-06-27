@@ -41,15 +41,29 @@ namespace WindowsFormsApp2
             e.HasMorePages = false;
         }
         /// <summary>
-        /// Zmiana wartości generowanego obrazu przez barcode.dll, po zmianie wartości wysyła nową wartość do barcodeControl1
+        /// Zmiana wartości generowanego obrazu przez barcode.dll, po zmianie wartości wysyła nową wartość do barcodeControl1, jeżeli wartość wprowadzana długość jest równa 0 lub 32 (maksymalna długość) wyrzuca okienko z komunikatem
         /// </summary>
         /// <param name="sender">Odniesienie sie do obiektu który wykonuje akcje (pole tekstowe)</param>
         /// <param name="e">e=zmiana wartości w polu</param>
+        public void testDługosci()
+        {
+            if (this.barcodeControl1.Number.Length == 0)
+            {
+               MessageBox.Show("Masz putą etykietę");
+
+            };
+            if (this.barcodeControl1.Number.Length > 32)
+            {
+                MessageBox.Show("Doszedłeś do maksymalnej długości");
+
+            };
+        }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             this.barcodeControl1.Number = textBox1.Text;
+            testDługosci();
         }
+        
 
-      
     }
 }

@@ -26,24 +26,20 @@
         /// Metody utworzone do Windows form
         /// </summary>
         private void InitializeComponent()
-        {///<param name="barcodeControll1"> Za pomocą biblioteki barcode.dll "przycisk" control wyświetla barcode</param>
-            this.barcodeControl1 = new Limilabs.Windows.BarcodeControl();
-         ///<param name="button1"> Utworzenie przycisku</param>
+        {            this.barcodeControl1 = new Limilabs.Windows.BarcodeControl();
             this.button1 = new System.Windows.Forms.Button();
-         ///<param name="print"> Utworzenie zależności do drukowania</param>
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-         ///<param name="textbox1"> Utworzenie formularza do wprowadzania</param>
             this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.barcodeControl1)).BeginInit();
             this.SuspendLayout();
             // 
-            /// <param name="barcodeControl1Main">Zdefiniowanie sposobu wyświetlania podglądu barcode w tym maksymalna wielkość wyświetlanej grafiki, czcionki czy odległości pomiędzy kolejnymi barami</param>
+            // barcodeControl1
             // 
             this.barcodeControl1.BackColor = System.Drawing.Color.White;
             this.barcodeControl1.BarColor = System.Drawing.Color.Black;
             this.barcodeControl1.FontName = "Microsoft Sans Serif";
-            this.barcodeControl1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.barcodeControl1.ForeColor = System.Drawing.Color.Black;
             this.barcodeControl1.Location = new System.Drawing.Point(2, 1);
             this.barcodeControl1.MaximumSize = new System.Drawing.Size(800, 200);
             this.barcodeControl1.MinimumSize = new System.Drawing.Size(800, 200);
@@ -51,11 +47,11 @@
             this.barcodeControl1.NarrowBarWidth = 2;
             this.barcodeControl1.Number = "Test gotowości programu";
             this.barcodeControl1.Ratio = 1;
-            this.barcodeControl1.Size = new System.Drawing.Size(800, 400);
+            this.barcodeControl1.Size = new System.Drawing.Size(800, 200);
             this.barcodeControl1.TabIndex = 0;
             this.barcodeControl1.Text = "barcodeControl1";
-            ///
-            /// <param name="button1Main">Zdefiniowanie opisu przycisku i jego zachowania</param>
+            // 
+            // button1
             // 
             this.button1.Location = new System.Drawing.Point(2, 325);
             this.button1.Name = "button1";
@@ -90,7 +86,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.barcodeControl1);
-            this.Name = "Barcode generator";
+            this.Name = "Form1";
             this.Text = "Barcode generator";
             ((System.ComponentModel.ISupportInitialize)(this.barcodeControl1)).EndInit();
             this.ResumeLayout(false);
@@ -99,7 +95,7 @@
         }
 
         #endregion
-
+        
         private Limilabs.Windows.BarcodeControl barcodeControl1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PrintDialog printDialog1;
