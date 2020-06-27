@@ -45,11 +45,17 @@ namespace WindowsFormsApp2
         /// </summary>
         /// <param name="sender">Odniesienie sie do obiektu który wykonuje akcje (pole tekstowe)</param>
         /// <param name="e">e=zmiana wartości w polu</param>
+       
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            this.barcodeControl1.Number = textBox1.Text;
+            testDługosci();
+        }
         public void testDługosci()
         {
             if (this.barcodeControl1.Number.Length == 0)
             {
-               MessageBox.Show("Masz putą etykietę");
+                MessageBox.Show("Masz putą etykietę");
 
             };
             if (this.barcodeControl1.Number.Length > 32)
@@ -58,12 +64,7 @@ namespace WindowsFormsApp2
 
             };
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            this.barcodeControl1.Number = textBox1.Text;
-            testDługosci();
-        }
-        
+
 
     }
 }
