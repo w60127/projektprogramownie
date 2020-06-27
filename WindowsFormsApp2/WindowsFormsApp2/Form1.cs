@@ -1,23 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WindowsFormsApp2
 {
+
     public partial class Form1 : Form
-    {/// <summary>
-    /// inicjalizacja programu
-    /// </summary>
+    {   
+        
         public Form1()
         {
             InitializeComponent();
         }
+        ///<param name="licznik">Globalny licznik długości wprowadzanych danych</param>
+        int licznik;
+
         /// <summary>
         /// Kliknięcie przycisku powoduje wydruk
         /// </summary>
@@ -45,26 +41,39 @@ namespace WindowsFormsApp2
         /// </summary>
         /// <param name="sender">Odniesienie sie do obiektu który wykonuje akcje (pole tekstowe)</param>
         /// <param name="e">e=zmiana wartości w polu</param>
-       
+
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             this.barcodeControl1.Number = textBox1.Text;
-            testDługosci();
+            licznik = this.barcodeControl1.Number.Length;
+            testDlugosci(licznik);
+
         }
-        public void testDługosci()
+        /// <summary>
+        /// Testowanie czy nie przekacza maksymalnego obszaru wydruku
+        /// </summary>
+        /// <param name="licznik">Jest to długość wprowadzonego kodu</param>
+        
+        public bool testDlugosci(int licznik)
         {
-            if (this.barcodeControl1.Number.Length == 0)
+            bool wynikTestu = true;
+            if (licznik == 0)
             {
                 MessageBox.Show("Masz putą etykietę");
+                wynikTestu = false;
+                return wynikTestu;
 
             };
-            if (this.barcodeControl1.Number.Length > 32)
+            if (licznik > 32)
             {
                 MessageBox.Show("Doszedłeś do maksymalnej długości");
-
+                wynikTestu = false;
+                return wynikTestu;
             };
+            return true;
         }
 
 
     }
+   
 }

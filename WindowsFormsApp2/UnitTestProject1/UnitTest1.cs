@@ -10,17 +10,14 @@ namespace testy
         public void testMaksymalnejDługości()
         {   //arrange
             string testowaetykieta = "grzegorz brzęszczyszczykiewicz";
-            
-            bool wynik = false;
+            int licznik = testowaetykieta.Length;
+          
             //act
+         
+            bool test1 = new Form1().testDlugosci(licznik);
             
-            if (testowaetykieta.Length < 32)
-            {
-                wynik = true;
-            };
-
             //assert
-            Assert.IsTrue(wynik);
+            Assert.IsTrue(test1);
 
         }
     }
