@@ -41,6 +41,7 @@ namespace WindowsFormsApp2
         /// </summary>
         /// <param name="sender">Odniesienie sie do obiektu który wykonuje akcje (pole tekstowe)</param>
         /// <param name="e">e=zmiana wartości w polu</param>
+        /// <param name="tekst">Zapisuje wartość textBox1 do stringa w celu przesłania do funkcji</param>
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -74,7 +75,11 @@ namespace WindowsFormsApp2
             };
             return true;
         }
-
+        /// <summary>
+        /// Sprawdza czy ciąg zawiera polskie znaki
+        /// </summary>
+        /// <param name="box">Tekst wprowadzony do pola tekstowego zapisany jako strong</param>
+      
         public bool czyZawieraPolskieZnaki(string box)
         {
             

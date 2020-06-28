@@ -8,10 +8,11 @@ namespace UnitTestProject2
         [TestMethod]
         public void testPolskosci()
         {   //arrange
+            
             string testowaetykieta = "grzegorz brzęszczyszczykiewicz";
 
             //act
-
+            
             bool test1 = new Form1().czyZawieraPolskieZnaki(testowaetykieta);
 
             //assert
