@@ -11,7 +11,10 @@ namespace WindowsFormsApp2
         {
             InitializeComponent();
         }
-        ///<param name="licznik">Globalny licznik długości wprowadzanych danych</param>
+
+        /// <summary>
+        /// inicjalizacja zmiennej do programu
+        /// </summary>
         int licznik;
 
         /// <summary>
