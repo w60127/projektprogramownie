@@ -59,7 +59,7 @@ namespace WindowsFormsApp2
         /// Testowanie czy nie przekacza maksymalnego obszaru wydruku
         /// </summary>
         /// <param name="licznik">Jest to długość wprowadzonego kodu</param>
-        
+        ///<returns>wynik false  jeżeli przekracza długość</returns>
         public bool testDlugosci(int licznik)
         {
             bool wynikTestu = true;
@@ -82,6 +82,7 @@ namespace WindowsFormsApp2
         /// Sprawdza czy ciąg zawiera polskie znaki
         /// </summary>
         /// <param name="box">Tekst wprowadzony do pola tekstowego zapisany jako strong</param>
+        /// <reutrns>wynik true jeżeli zawiera polskie znaki</reutrns>
       
         public bool czyZawieraPolskieZnaki(string box)
         {

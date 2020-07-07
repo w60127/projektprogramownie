@@ -11,6 +11,7 @@ var class_windows_forms_app2_1_1_form1 =
     [ "barcodeControl1", "class_windows_forms_app2_1_1_form1.html#a4b0b7cd5503aeae06efaf48fcf3bcac0", null ],
     [ "button1", "class_windows_forms_app2_1_1_form1.html#a5d293e7e33296dc449cde65ccd41e911", null ],
     [ "components", "class_windows_forms_app2_1_1_form1.html#a5371ab69e13c5b1c127472a75916a3fd", null ],
+    [ "label1", "class_windows_forms_app2_1_1_form1.html#adc0b3be1c1dfc0cdd5dec0969d831768", null ],
     [ "licznik", "class_windows_forms_app2_1_1_form1.html#a1ba7209d454b459082f81e8979098b22", null ],
     [ "printDialog1", "class_windows_forms_app2_1_1_form1.html#ae17c00ad75d3798ff64b4c47c2939d1c", null ],
     [ "printDocument1", "class_windows_forms_app2_1_1_form1.html#a968a31b6750dad705e99b72b6af54565", null ],
